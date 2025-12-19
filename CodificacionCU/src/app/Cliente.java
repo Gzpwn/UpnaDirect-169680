@@ -16,7 +16,7 @@ public class Cliente {
         
     }
     
-    private boolean validar_fecha() { // Funcion para validar la fecha
+    private boolean validarFecha() { // Funcion para validar la fecha
        
                 
         if (this.fechaNacimiento < 1900 || this.fechaNacimiento > anoActual) {
@@ -28,7 +28,7 @@ public class Cliente {
         
     }
     
-    private boolean validar_salario() { // Funcion para validar el salario
+    private boolean validarSalario() { // Funcion para validar el salario
         
         if (this.salario <= 0) {
             
@@ -41,7 +41,7 @@ public class Cliente {
     
     public boolean validarCliente() {
         
-        return this.validar_fecha() && this.validar_salario();
+        return this.validarFecha() && this.validarSalario();
         
     }
     
