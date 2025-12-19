@@ -15,12 +15,12 @@ public class CalculadoraOfertas {
         int valorBien = bien.obtenerValor();
         
         int polizaMafro = calcularMafro(tipoBien, valorBien, edad, salario);
-        int polizaAdasles = calcularAdasles(tipoBien, valorBien, edad, salario);
-        int polizaLineaIndirecta = calcularLineaIndirecta(tipoBien, valorBien, edad, salario);
+        int polizaAdasles = calcularAdasles(tipoBien, valorBien, edad);
+        int polizaLineaIndirecta = calcularLineaIndirecta(tipoBien, valorBien, edad);
         
-        ofertas.anadir(new Oferta("Mafro",polizaMafro, cliente,bien));
-        ofertas.anadir(new Oferta("Linea Indirecta",polizaLineaIndirecta,cliente,bien));
-        ofertas.anadir(new Oferta("Adasles",polizaAdasles, cliente, bien));
+        ofertas.add(new Oferta("Mafro",polizaMafro, cliente,bien));
+        ofertas.add(new Oferta("Linea Indirecta",polizaLineaIndirecta,cliente,bien));
+        ofertas.add(new Oferta("Adasles",polizaAdasles, cliente, bien));
         
         return ofertas;
         
@@ -42,13 +42,13 @@ public class CalculadoraOfertas {
         
     }
     
-    private int calcularLineaIndirecta(String tipoBien, int valorBien, int edad, int salario) { // Calcular poliza de Linea Indirecta
+    private int calcularLineaIndirecta(String tipoBien, int valorBien, int edad) { // Calcular poliza de Linea Indirecta
         
         if ( (tipoBien.equals("vehiculo") && valorBien < 20000) || (tipoBien.equals("vivienda") && valorBien < 150000)) {
             
             return (int)(valorBien * 0.04);
         
-        } else if (tipoBien.equals("vehiculo") && valorBien >= 20000) {
+        } else if (tipoBien.equals("vehiculo") && valorBien >= 20000 &&  edad > 60) {
             
             return (int)(valorBien * 0.06);
         } else {
@@ -57,7 +57,7 @@ public class CalculadoraOfertas {
         
     }
     
-    private int calcularAdasles(String tipoBien, int valorBien, int edad, int salario) { // Calcular poliza Adasles
+    private int calcularAdasles(String tipoBien, int valorBien, int edad) { // Calcular poliza Adasles
         
         if (tipoBien.equals("vehiculo") && (edad <20 || edad >60)) {
             return (int)(valorBien * 0.06);
