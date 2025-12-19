@@ -34,11 +34,22 @@ public class CalculadoraOfertas {
         
     }
     
-    private int calcularLineaIndirecta() {
+    private double calcularLineaIndirecta() {
+        
+        if ( (this.tipoBien.equals("vehiculo") && this.valorBien < 20000) || (this.tipoBien.equals("vivienda") && this.valorBien < 150000)) {
+            
+            return this.valorBien * 0.04;
+        
+        } else if (this.tipoBien.equals("vehiculo") && this.valorBien >= 20000) {
+            
+            return this.valorBien * 0.06;
+        } else {
+            return this.valorBien * 0.03;
+        }
         
     }
     
-    private int calcularAdasles() {
+    private double calcularAdasles() {
         
     }
     
