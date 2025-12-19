@@ -3,57 +3,67 @@ package app;
 import java.util.List;
 import java.util.ArrayList;
 public class CalculadoraOfertas {
+
     
-    private List<Oferta> ofertas = new ArrayList<>(); // Creamos una lista para las ofertas
-    private Cliente cliente;
-    private Bien bien;
-    private int salario = cliente.obtenerSalario();
-    private String tipoBien = bien.obtenerTipo();
-    private int valorBien = bien.obtenerValor();
-    private int edad = cliente.obtenerEdad();
     
-    public CalculadoraOfertas(Cliente cliente, Bien bien) {
+    public List<Oferta> generarOfertas(Cliente cliente, Bien bien) {
         
-        this.bien = bien;
-        this.cliente = cliente;
+        List<Oferta> ofertas = new ArrayList<>(); // Creamos una lista para las ofertas
+        int edad = cliente.obtenerEdad();
+        int salario = cliente.obtenerSalario();
+        String tipoBien = bien.obtenerTipo();
+        int valorBien = bien.obtenerValor();
+        
+        int polizaMafro = calcularMafro(tipoBien, valorBien, edad, salario);
+        int polizaAdasles = calcularAdasles(tipoBien, valorBien, edad, salario);
+        int polizaLineaIndirecta = calcularLineaIndirecta(tipoBien, valorBien, edad, salario);
+        
+        ofertas.anadir(new Oferta("Mafro",polizaMafro, cliente,bien));
+        ofertas.anadir(new Oferta("Linea Indirecta",polizaLineaIndirecta,cliente,bien));
+        ofertas.anadir(new Oferta("Adasles",polizaAdasles, cliente, bien));
+        
+        return ofertas;
+        
     }
     
-    private double calcularMafro() {
+    private int calcularMafro(String tipoBien, int valorBien, int edad, int salario) { //Calcular poliza de mafro
         
-        if (this.tipoBien.equals("vehiculo") && this.edad < 20) {
+        if (tipoBien.equals("vehiculo") && edad < 20) {
             
-            return this.valorBien * 0.05;
-        } else if (this.tipoBien.equals("vivienda") && this.valorBien > 200000 && this.salario < 20000) {
+            return (int)(valorBien * 0.05);
+        } else if (tipoBien.equals("vivienda") && valorBien > 200000 && salario < 20000) {
             
-            return this.valorBien * 0.02;
+            return (int)(valorBien * 0.02);
         
         } else {
             
-            return this.valorBien * 0.03;
+            return (int)(valorBien * 0.03);
         }
         
     }
     
-    private double calcularLineaIndirecta() {
+    private int calcularLineaIndirecta(String tipoBien, int valorBien, int edad, int salario) { // Calcular poliza de Linea Indirecta
         
-        if ( (this.tipoBien.equals("vehiculo") && this.valorBien < 20000) || (this.tipoBien.equals("vivienda") && this.valorBien < 150000)) {
+        if ( (tipoBien.equals("vehiculo") && valorBien < 20000) || (tipoBien.equals("vivienda") && valorBien < 150000)) {
             
-            return this.valorBien * 0.04;
+            return (int)(valorBien * 0.04);
         
-        } else if (this.tipoBien.equals("vehiculo") && this.valorBien >= 20000) {
+        } else if (tipoBien.equals("vehiculo") && valorBien >= 20000) {
             
-            return this.valorBien * 0.06;
+            return (int)(valorBien * 0.06);
         } else {
-            return this.valorBien * 0.03;
+            return (int)(valorBien * 0.03);
         }
         
     }
     
-    private double calcularAdasles() {
+    private int calcularAdasles(String tipoBien, int valorBien, int edad, int salario) { // Calcular poliza Adasles
         
-    }
-    
-    private List<Oferta> generarOfertas() {
+        if (tipoBien.equals("vehiculo") && (edad <20 || edad >60)) {
+            return (int)(valorBien * 0.06);
+        } else {
+            return (int)(valorBien * 0.02);
+        }
         
     }
     
