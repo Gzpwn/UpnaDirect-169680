@@ -7,6 +7,7 @@ public class Cliente {
     
     private int fechaNacimiento;
     private int salario;
+    private int anoActual = LocalDate.now().getYear(); // Obtener año actual
     
     public Cliente(int fechaNacimiento, int salario) {
         
@@ -16,10 +17,9 @@ public class Cliente {
     }
     
     private boolean validar_fecha() { // Funcion para validar la fecha
-        
-        int ano_actual = LocalDate.now().getYear(); // Obtener el año actual
+       
                 
-        if (this.fechaNacimiento < 1900 || this.fechaNacimiento > ano_actual) {
+        if (this.fechaNacimiento < 1900 || this.fechaNacimiento > anoActual) {
             
             return false;
         } else {
@@ -43,6 +43,16 @@ public class Cliente {
         
         return this.validar_fecha() && this.validar_salario();
         
+    }
+    
+    public int obtenerSalario() {
+        
+        return this.salario;
+    }
+    
+    public int obtenerEdad() {
+        
+        return this.anoActual - this.fechaNacimiento;
     }
     
 }
