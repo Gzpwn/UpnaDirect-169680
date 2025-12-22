@@ -28,7 +28,7 @@ public class CalculadoraOfertas {
     
     private int calcularMafro(String tipoBien, int valorBien, int edad, int salario) { //Calcular poliza de mafro
         
-        if (tipoBien.equals("vehiculo") && edad < 20) {
+        if (tipoBien.equals("vehiculo") && edad <=20) {
             
             return (int)(valorBien * 0.05);
         } else if (tipoBien.equals("vivienda") && valorBien > 200000 && salario < 20000) {
@@ -59,7 +59,7 @@ public class CalculadoraOfertas {
     
     private int calcularAdasles(String tipoBien, int valorBien, int edad) { // Calcular poliza Adasles
         
-        if (tipoBien.equals("vehiculo") && (edad <20 || edad >60)) {
+        if (tipoBien.equals("vehiculo") && (edad <=20 || edad >60)) {
             return (int)(valorBien * 0.06);
         } else {
             return (int)(valorBien * 0.02);
