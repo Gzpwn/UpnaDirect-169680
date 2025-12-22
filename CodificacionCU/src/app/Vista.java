@@ -15,8 +15,5 @@ public interface Vista {
     
     // Muestra un mensaje de error
     void mostrarError(String mensaje);
-    
-    // Solicita los datos del usuario
-    void solicitarDatos();
-    
+        
 }
