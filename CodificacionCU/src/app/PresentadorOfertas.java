@@ -25,4 +25,15 @@ public class PresentadorOfertas {
         }
     }
     
+    public Oferta devolverMejorOferta (int fechaNacimiento, int salario, String tipoBien, int valorBien) {
+        
+        Oferta oferta = sistema.ofrecerMejorOferta(fechaNacimiento, salario, tipoBien, valorBien);
+        if (oferta == null) { // Si la oferta no es válida, llamamos a la vista para que muestre por pantalla el mensaje de error
+            vista.mostrarError("\n[!] No se ha podido calcular la oferta\n");
+        } else {
+            return oferta; // Si la oferta es válida, llamamos a la vista para que muestre por pantalla la oferta  
+        }  
+        return oferta;
+    }
+    
 }
