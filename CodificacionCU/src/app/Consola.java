@@ -53,7 +53,7 @@ public class Consola implements Vista{
             System.out.println("[i] Introduce el valor del bien que has indicado: ");
             int valorBien = escaner.nextInt(); // Almacenamos el valor del bien
 
-            oferta = presentador.devolverMejorOferta(fechaNacimiento, valorBien, tipoBien, valorBien); // Obtenemos la mejor oferta
+            oferta = presentador.devolverMejorOferta(fechaNacimiento, salarioAnual, tipoBien, valorBien); // Obtenemos la mejor oferta
 
             if (oferta == null) {
                 System.out.println("\n[!] Datos incorrectos, vuelve a introducirlos\n");
