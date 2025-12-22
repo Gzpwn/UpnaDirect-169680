@@ -1,0 +1,203 @@
+commit 18b964061fdd9c45ffc7f6aa39eb1024b70a1e27
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 13:49:26 2025 +0100
+
+    Codificación y pruebas
+
+commit c1850adbe263372694f142029f0d3b0474f833ce
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 13:49:06 2025 +0100
+
+    Requisitos finales
+
+commit aeabf5c78556edf295ffd2057cfc58e76950fe6e
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 13:48:31 2025 +0100
+
+    Diseño técnico final
+
+commit 888fda1d36d57b29f826c47c96015800755c4a4a
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 13:47:47 2025 +0100
+
+    Plan de pruebas manuales
+
+commit 91f525da950bbfcf2bb8369c426a420ceb772976
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 13:47:23 2025 +0100
+
+    Análisis funcional final
+
+commit b664cb62fb9a18aa0c919eaf03d30a68c4c63221
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 13:31:51 2025 +0100
+
+    Arreglados errores tras ejecutar los tests, arreglados los <= de las edades
+
+commit 7f33c0da9f505fa77df33af89f9ba18085b588d3
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 13:16:42 2025 +0100
+
+    Test sistema
+
+commit 6264f4ebc1762c893e4d78f333a7449a09f442c5
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 12:42:28 2025 +0100
+
+    Tests cliente
+
+commit ce0e75c72665cd99ab36c6d0cc8c6b5b0bd5d89b
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 12:35:47 2025 +0100
+
+    Informe del último commit realizado --> CalculadoraComisiones
+
+commit 50aa4f441d70aeeb77f4dda2de0896dfa2030d52
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 12:35:21 2025 +0100
+
+    Renombro
+
+commit 6530be18bd4f0082b7a94c4e54b6f7d7389ebaea
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 12:33:48 2025 +0100
+
+    Informe realizado sobre todo el proyecto con PMD
+
+commit 939c25ae09a5adfa4f947cbfa167ab9eeb406c40
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 12:27:07 2025 +0100
+
+    Calculadora comisiones final
+
+commit eb970e34652f7b68f4a0f2f7e23d597ae5d1e6ce
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 12:26:30 2025 +0100
+
+    Sistema final
+
+commit 3d11c4dd37fac8933dfddce2924e2d0cd63bf4c6
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 12:25:32 2025 +0100
+
+    Consola final
+
+commit dfa40eeab377ccd4d167a3ce2d586981134616c9
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 12:24:07 2025 +0100
+
+    PresentadorOfertas final
+
+commit 67dfcead6f0fd4b564aa50b773bc82c7c828c92c
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 06:59:51 2025 +0100
+
+    Presentador v2
+
+commit d0cc1d9da1b90c71d676b36b9ae08d4cf6477b3d
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 06:59:31 2025 +0100
+
+    Consola v2
+
+commit 9b08c52eafddd301ecda6670f3ef44a8421f3349
+Author: iker <ikerpg2112@gmail.com>
+Date:   Mon Dec 22 06:59:14 2025 +0100
+
+    Vista v2
+
+commit 451055b1951d5e11ef7eb3252e2b9b0ff4f91a81
+Author: iker <ikerpg2112@gmail.com>
+Date:   Sun Dec 21 22:21:17 2025 +0100
+
+    Ejecutor v1
+
+commit 01ea1419a9b5c56d0d6ca4a69dab248a3be27ed4
+Author: iker <ikerpg2112@gmail.com>
+Date:   Sun Dec 21 21:55:55 2025 +0100
+
+    Consola v1
+
+commit ff7795ee0028ec004653411dff61439aa6a122a3
+Author: Iker <ikerpg2112@gmail.com>
+Date:   Sat Dec 20 21:39:10 2025 +0100
+
+    Presentador v1
+
+commit 0479f55444d89ae28698e6f330752869a8990a52
+Author: Iker <ikerpg2112@gmail.com>
+Date:   Sat Dec 20 20:55:57 2025 +0100
+
+    Sistema v1
+
+commit f5296788340e88be08ce9b732b05275cfe434353
+Author: Iker <ikerpg2112@gmail.com>
+Date:   Sat Dec 20 19:58:39 2025 +0100
+
+    Gestor Ofertas v1
+
+commit a186aa14b8a7fbd2a25820c9cdee6b221962634d
+Author: = <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 22:59:06 2025 +0100
+
+    Gestor v1
+
+commit 32c68bb686aa5193e287ec680921e762198df03e
+Author: = <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 22:46:23 2025 +0100
+
+    Cliente v1
+
+commit c352842aefe2b9acaaa72c336d6027143f5b870e
+Author: = <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 22:42:52 2025 +0100
+
+    Oferta v1
+
+commit ed8d6a29f0c84fd942de7c547162dd955728760c
+Author: = <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 22:33:37 2025 +0100
+
+    Revisada v1
+
+commit 248790b3948e56deac207b69ebdbff745c273088
+Author: = <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 22:13:55 2025 +0100
+
+    Calculadora de comisiones terminada
+
+commit f54b3aef5195bd6d897d294de728f44768c15d1d
+Author: = <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 21:29:09 2025 +0100
+
+    Calculadora de ofertas terminada
+
+commit 69fcb553c07dc89e2005e89b6f72192a8616e431
+Author: = <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 21:05:08 2025 +0100
+
+    Calculadora de Ofertas casi terminada, hago commit por que la conexión es inestable, para no perder datos
+
+commit f8cab296b74c4c745c4bf79b1eb9c1255b3b4eac
+Author: Iker Payan <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 18:54:21 2025 +0100
+
+    Directorio de codificación
+
+commit e3e4f6666582b74d252419fe8e2d072f113cb857
+Author: Iker Payan <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 18:52:04 2025 +0100
+
+    Bien codificado
+
+commit 0f1ab08c3fc16cc54b0596c2406323b869ba9fbf
+Author: Iker Payan <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 18:13:27 2025 +0100
+
+    Cliente codificado
+
+commit b30803620c51989e096a7abd58a3d4b77866048c
+Author: Gzpwn <ikerpg2112@gmail.com>
+Date:   Fri Dec 19 17:45:53 2025 +0100
+
+    Initial commit
