@@ -1,0 +1,5 @@
+He cambiado las agregaciones de bien y cliente con oferta, ya que estos son clases / objetos independientes a la oferta, y la clase oferta únicamente hace uso de ellos y en la segunda entrega pasé por alto eliminar los rombos del diagrama.
+
+En la clase sistema, he eliminado los métodos registrar cliente y registrar bien, ya que a la hora de codificar hacemos uso de new Cliente(), la palabra reservada new para crear una instancia de esa clase, por lo que veo que no es necesario tener un método específico para ello.
+
+En la clase GestorOfertas he eliminado el método mostrarOfertas, ya que la visualización de las ofertas está dentro de la capa de codificación.

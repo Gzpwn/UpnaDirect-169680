@@ -1,0 +1,12 @@
+El técnico utiliza el método ofrecerMejorOferta() de la clase Sistema.
+El sistema es el encargado de coordinar todo el proceso, por lo que el técnico solicita la operación y no ejecuta ninguna lógica de negocio.
+
+En primer lugar, el sistema instancia un objeto de la clase Cliente, al que le pasa los datos introducidos por el técnico. A continuación, el sistema invoca el método validarCliente() para comprobar que el cliente cumple las reglas establecidas. Si los datos son válidos, el sistema continúa el proceso.
+
+Seguidamente, el sistema crea un objeto de la clase Bien, al que también se le asignan los datos introducidos por el técnico. Igual que antes, el sistema invoca el método validarBien(). Si el bien es válido, el sistema sigue con el flujo.
+
+Posteriormente, el sistema instancia un objeto de la clase CalculadoraOfertas y llama al método generarOfertas(cliente, bien), pasándole los objetos previamente validados. Este método aplica las reglas de cada aseguradora y devuelve al sistema una lista de ofertas.
+
+A continuación, el sistema instancia un objeto de la clase GestorOfertas y utiliza el método mejorOferta(listaOfertas) para seleccionar la oferta más ventajosa, siguiendo el criterio del enunciado: primero la de menor importe y, en caso de empate, la que genera mayor comisión.
+
+Finalmente, el sistema devuelve la oferta más ventajosa al técnico comercial.

@@ -1,0 +1,2 @@
+1 - Actor sistema eliminado (no es un actor)
+2 - Historia de usuario consultar ofertas para cliente agregada. Ya que el cliente puede consultar sus ofertas cuando quiera, siempre y cuando tenga ofertas disponibles.

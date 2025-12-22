@@ -1,0 +1,10 @@
+Las clases elegidas para el diseño del sistema son: Usuario, Técnico, Cliente, Agente, Bien, Oferta, Sistema, GestorOfertas, CalculadoraOfertas y CalculadoraComisiones.
+
+Las clases Técnico, Agente y Cliente heredan de la clase Usuario, ya que todos ellos comparten atributos y comportamiento relacionados con la autenticación. Estas clases no tienen lógica del negocio, dado que esta está reflejada en la clase Sistema.
+
+La clase Oferta contiene la información generada tras aplicar las reglas de cada aseguradora: importe del seguro, comisión, aseguradora.  No utilizamos agregación ni composición, ya que ni el cliente ni el bien forman parte exclusiva de la oferta.
+
+La clase Sistema actúa como la coordinadora de la lógica del negocio, que hace uso de CalculadoraOfertas para generar las ofertas de la aseguradora, CalculadoraComisiones para asignar la comisión correspondiente y GestorOfertas para seleccionar la oferta más ventajosa.
+
+La clase CalculadoraOfertas genera las ofertas a partir de un objeto Cliente y un objeto Bien. 
+Del mismo modo, CalculadoraComisiones recibe los datos necesarios para calcular la comisión.

@@ -1,0 +1,1 @@
+Respecto a la entrega 2 he cambiado el uso de los métodos registrarCliente y registrarBien, por new Cliente y new Bien, y al invocar los métodos validarBien y validarCliente, he eliminado el uso de los parámetros, ya que los datos ya están dentro del objeto creado en las líneas new Cliente y new Bien.
