@@ -1,0 +1,1 @@
+En el diagrama de casos de uso he actualizado el tema de los includes a autenticarse, y he puesto como precondición que el usuario esté autenticado
