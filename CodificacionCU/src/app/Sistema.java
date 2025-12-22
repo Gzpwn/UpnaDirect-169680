@@ -61,7 +61,7 @@ public class Sistema {
         
         CalculadoraComisiones calculadora = new CalculadoraComisiones();
         
-        for(Oferta ofertaActual: ofertas) {
+        for(Oferta ofertaActual: ofertas) { // Recorremos cada oferta y calculamos las comisiones
             
             String aseguradora = ofertaActual.obtenerAseguradora();
             int poliza = ofertaActual.obtenerPoliza();
